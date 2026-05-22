@@ -1,0 +1,5 @@
+interface:
+  display_name: "Justfile Workflow"
+  short_description: "Standardizes repeatable project commands"
+  default_prompt: "Use $justfile-workflow to define or run this project workflow."
+

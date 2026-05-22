@@ -1,0 +1,5 @@
+interface:
+  display_name: "UV Python Workflow"
+  short_description: "Uses uv for Python project commands"
+  default_prompt: "Use $uv-python-workflow to set up or run this Python tooling."
+

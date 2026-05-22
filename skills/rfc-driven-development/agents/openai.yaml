@@ -1,0 +1,5 @@
+interface:
+  display_name: "RFC-Driven Development"
+  short_description: "Records substantial design decisions first"
+  default_prompt: "Use $rfc-driven-development to draft or check an RFC for this change."
+

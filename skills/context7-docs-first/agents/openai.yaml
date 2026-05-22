@@ -1,0 +1,5 @@
+interface:
+  display_name: "Context7 Docs First"
+  short_description: "Queries current API docs through subagents"
+  default_prompt: "Use $context7-docs-first before implementing against this external API."
+

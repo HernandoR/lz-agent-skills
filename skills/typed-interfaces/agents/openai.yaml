@@ -1,0 +1,5 @@
+interface:
+  display_name: "Typed Interfaces"
+  short_description: "Keeps public API contracts explicit"
+  default_prompt: "Use $typed-interfaces to review this public interface change."
+

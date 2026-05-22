@@ -1,0 +1,5 @@
+interface:
+  display_name: "Decision Grilling"
+  short_description: "Resolves design questions one at a time"
+  default_prompt: "Use $decision-grilling to stress-test this plan before implementation."
+

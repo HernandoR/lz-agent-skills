@@ -1,0 +1,5 @@
+interface:
+  display_name: "Development Best Practices"
+  short_description: "Routes development work to focused skills"
+  default_prompt: "Use $development-best-practices to organize this development task."
+
