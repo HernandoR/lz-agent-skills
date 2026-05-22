@@ -1,0 +1,5 @@
+interface:
+  display_name: "Git Workflow And Versioning"
+  short_description: "Keeps changes small and reviewable"
+  default_prompt: "Use $git-workflow-and-versioning to structure these commits."
+

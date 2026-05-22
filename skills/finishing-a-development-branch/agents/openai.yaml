@@ -1,0 +1,5 @@
+interface:
+  display_name: "Finishing A Development Branch"
+  short_description: "Chooses merge, PR, keep, or discard"
+  default_prompt: "Use $finishing-a-development-branch to finish this verified branch."
+
