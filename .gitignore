@@ -2,3 +2,6 @@
 __pycache__/
 .ruff_cache/
 
+# Eval workspaces
+codegraph-usage-workspace/
+

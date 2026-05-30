@@ -1,0 +1,4 @@
+interface:
+  display_name: "CodeGraph Usage"
+  short_description: "Explore code with CodeGraph's knowledge graph tools"
+  default_prompt: "Use $codegraph-usage to explore the codebase with indexed knowledge graph tools."
