@@ -14,8 +14,8 @@ problem.
 ## Baseline Checklist
 
 - Resolve design uncertainty before editing behavior.
-- Draft an RFC for substantive public contracts, architecture, workflow, or
-  repository-layout changes.
+- Draft an RFC for proposals that need discussion; create an ADR once a
+  decision is settled.
 - Use Context7 through a subagent when an external API is unknown or lacks a
   local example.
 - Treat public interfaces as typed contracts.
@@ -26,7 +26,8 @@ problem.
 
 ## Focused Skills
 
-- `rfc-driven-development`: use before substantial design or workflow changes.
+- `adr-driven-development`: use after a design decision is settled to record it.
+- `write-rfc`: use before a decision is made to propose and discuss ideas.
 - `context7-docs-first`: use before implementing against unknown external APIs.
 - `typed-interfaces`: use when editing public Python, TypeScript, Rust, or Go
   interfaces.

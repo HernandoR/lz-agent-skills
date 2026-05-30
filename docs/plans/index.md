@@ -1,26 +1,31 @@
-# Skills Repository RFCs
+# Architecture Decision Records
 
-This directory holds design RFCs for the skills repository. File naming is
-mechanical:
+This directory holds ADRs — settled design decisions recorded for future
+reference. Each ADR captures context, the decision made, and its consequences.
+
+ADRs use the template at `skills/adr-driven-development/references/adr-template.md`.
+
+For proposals that are still under discussion, see `docs/rfc/`.
+
+## File Naming
 
 ```text
-rfc-{id}-{kebab-case-title}-{YYYY-MM-DD}.md
+adr-{id}-{kebab-case-title}-{YYYY-MM-DD}.md
 ```
 
-- `id` is a zero-padded four-digit sequence, issued in order (`0001`, `0002`,
-  ...). Never reuse an ID.
+- `id` is a zero-padded four-digit sequence, independent from RFC IDs.
 - `kebab-case-title` is a short slug; prefer six words or fewer.
 - `YYYY-MM-DD` is the draft date.
 
-## Current RFCs
+## Current Records
 
 | ID | Title | Status |
 |---|---|---|
-| [RFC-0001](rfc-0001-initial-skill-layout-2026-05-22.md) | Initial Skill Layout | Accepted |
+| [ADR-0001](adr-0001-initial-skill-layout-2026-05-22.md) | Initial Skill Layout | Accepted |
 
 ## Process
 
-Use `skills/rfc-driven-development/references/rfc-template.md` as the preferred
-starting point for new RFCs once the skill exists. Existing RFCs are historical
-records and are not updated only to match later template changes.
-
+- Proposals that need discussion belong in `docs/rfc/` — use `skills/write-rfc`.
+- Once a decision is settled, create an ADR here — use `skills/adr-driven-development`.
+- Existing records are historical artifacts and are not updated only to match
+  later template changes.

@@ -13,7 +13,9 @@ skills may cross-reference each other.
 
 The repository follows conventions learned from `pcl-rustic`:
 
-- Prefer RFCs for substantive design changes.
+- Prefer RFCs (Request for Comments) for proposing and discussing substantive
+  design changes. Record settled decisions as ADRs (Architecture Decision
+  Records). RFCs live in `docs/rfc/`; ADRs live in `docs/plans/`.
 - Use Context7 through a subagent for unknown external APIs or APIs without
   local examples.
 - Treat public interfaces as typed contracts.
@@ -25,7 +27,8 @@ The repository follows conventions learned from `pcl-rustic`:
 
 ```text
 .agents/                  # project metadata only; not installable skills
-docs/plans/               # RFCs and their index
+docs/plans/               # ADRs (settled decisions)
+docs/rfc/                 # RFCs (proposals for discussion)
 scripts/                  # validation and maintenance scripts
 skills/                   # installable skill packages
 Justfile                  # repeatable project commands
@@ -49,17 +52,21 @@ skills/<skill-name>/
 must match the `name`. Descriptions should describe triggering conditions, not
 summarize the workflow.
 
-## RFC Workflow
+## ADR and RFC Workflow
 
-Substantive skill-set, repository-layout, or workflow changes require an RFC in
-`docs/plans/`:
+Propose substantive changes via an RFC and record settled decisions via an ADR.
+They live in separate directories:
 
 ```text
-docs/plans/rfc-{NNNN}-{kebab-title}-{YYYY-MM-DD}.md
+docs/rfc/rfc-{NNNN}-{kebab-title}-{YYYY-MM-DD}.md
+docs/plans/adr-{NNNN}-{kebab-title}-{YYYY-MM-DD}.md
 ```
 
-RFCs are indexed by ID in `docs/plans/index.md`. Existing RFCs are historical
-records; do not update old RFCs only because a newer template exists.
+Use `skills/write-rfc` to draft proposals and `skills/adr-driven-development`
+to record decisions. RFC and ADR IDs are independent sequences.
+
+Each directory has its own `index.md`. Existing records are historical
+artifacts; do not update old records only because a newer template exists.
 
 ## Commands
 
