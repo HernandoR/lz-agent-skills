@@ -68,10 +68,13 @@ Ship `skills/centralized-path-config/` with the following settled choices:
    ```
 
 5. **Detector script ships in both places.** The skill ships
-   `scripts/find_inline_paths.sh` (dependency-free, `rg`/`grep -E`); target
-   projects copy it into their own `scripts/`. Updates flow skill →
-   re-copy. The script accepts `--allow <module-path>` flags to extend
-   beyond the default allow-list.
+   `scripts/find_inline_paths.py` (stdlib-only Python); target projects
+   copy it into their own `scripts/`. Updates flow skill → re-copy. The
+   detector flags any identifier expression joined with `/ "literal"`
+   (e.g. `mount / "outputs"`, `Path("/x") / "y"`), not only names ending
+   in `_path`/`_dir`/`_root`. The default allow-list matches by basename
+   (`path_config.py`, `paths.py`) and accepts substring extensions via
+   `--allow <module-path>` flags.
 
 6. **Skill ships its own `.agents/spec/no-inline-paths.md` payload**,
    rewritten (not copied verbatim from MTR) to be repo-agnostic and to
@@ -115,3 +118,11 @@ fixture containing only allowed patterns.
   config; cross-link only, no shared layout doc per RFC-0002 Q10.
 - ADR-0005 (Agent Spec Convention) — supplies the schema this skill's
   `.agents/spec/no-inline-paths.md` payload conforms to.
+
+## Amendments
+
+- 2026-06-03 (RFC-0006): Decision item 5 originally named a bash detector
+  (`find_inline_paths.sh`). Implementation shipped `find_inline_paths.py`
+  (Python, stdlib-only); the regex matches any identifier expression
+  joined with `/ "literal"`; the default allow-list matches by basename.
+  See [RFC-0006](../rfc/rfc-0006-skill-implementation-deltas-2026-06-03.md).

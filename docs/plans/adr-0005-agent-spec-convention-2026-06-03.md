@@ -34,7 +34,7 @@ Ship `skills/agent-spec-convention/` with the following settled choices:
    loaded by harnesses.
 
 2. **Schema linter ships as `scripts/validate_agent_specs.py` —
-   stdlib-only, structural only.** It walks `.agents/spec/*.md` and
+   stdlib-only Python, structural only.** It walks `.agents/spec/*.md` and
    asserts required H2 headings (Rule / Why / Where / Examples /
    References) appear in order, plus required frontmatter fields. No
    prose-quality judgement. Opt-out for intentionally-omitted sections:
@@ -108,3 +108,10 @@ The skill must self-test by running its own
   schema.
 - ADR-0004 (Loguru-First Logging) — ships its no-`print` rule as a
   spec doc conforming to this schema.
+
+## Amendments
+
+- 2026-06-03 (RFC-0006): Decision item 2 made the linter language
+  explicit ("stdlib-only Python") to match the convention used by
+  ADR-0002 / ADR-0004 / ADR-0006 detectors. Behaviour unchanged. See
+  [RFC-0006](../rfc/rfc-0006-skill-implementation-deltas-2026-06-03.md).

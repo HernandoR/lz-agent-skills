@@ -26,8 +26,8 @@ Ship `skills/loguru-first-logging/` with the following settled choices:
 1. **Ban `import logging` in business code; require an `InterceptHandler`
    reroute at app entry** to capture third-party stdlib loggers
    (urllib3, requests, boto3, torch). Detector
-   `scripts/find_stdlib_logging.sh` flags `import logging` and
-   `logging.getLogger` outside an allow-list (default
+   `scripts/find_stdlib_logging.py` (stdlib-only Python) flags
+   `import logging` and `logging.getLogger` outside an allow-list (default
    `<pkg>/log_setup.py`); same in-skill + copy-to-target pattern as
    ADR-0002's path detector.
 
@@ -101,3 +101,11 @@ behaviour.
   level passed to `logger.add(...)`.
 - ADR-0005 (Agent Spec Convention) — the no-`print` rule is published
   as an `.agents/spec/` doc.
+
+## Amendments
+
+- 2026-06-03 (RFC-0006): Decision item 1 originally named
+  `find_stdlib_logging.sh`. Implementation shipped
+  `find_stdlib_logging.py` (Python, stdlib-only) for parity with
+  ADR-0002's detector. See
+  [RFC-0006](../rfc/rfc-0006-skill-implementation-deltas-2026-06-03.md).

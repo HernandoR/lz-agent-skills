@@ -56,8 +56,9 @@ Ship `skills/tdd-checkbox-plans/` with the following settled choices:
    Step-2 verify-red block.** Prose form lets the failure-fragment
    prediction degrade to "should fail"; the explicit form forces the
    author to write down the substring to verify. The skill ships
-   `scripts/validate_tdd_plans.py` (sibling of ADR-0005's spec
-   validator) that walks ladder files and asserts both bullets.
+   `scripts/validate_tdd_plans.py` (stdlib-only Python, sibling of
+   ADR-0005's spec validator) that walks ladder files and asserts both
+   bullets.
 
 4. **Every task ends with a Step-5 commit checkbox.** Same forcing
    logic as Q22; pairs with recovery (Q23) since `git log` on the
@@ -140,3 +141,10 @@ without; the validator must accept the first and reject the second.
   execution that ladder.
 - ADR-0005 (Agent Spec Convention) — the structural validator pattern
   is reused here.
+
+## Amendments
+
+- 2026-06-03 (RFC-0006): Decision item 3 made the validator language
+  explicit ("stdlib-only Python") to match the convention used by
+  ADR-0002 / ADR-0004 / ADR-0005. Behaviour unchanged. See
+  [RFC-0006](../rfc/rfc-0006-skill-implementation-deltas-2026-06-03.md).

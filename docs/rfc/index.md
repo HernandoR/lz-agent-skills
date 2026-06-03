@@ -24,6 +24,7 @@ rfc-{id}-{kebab-case-title}-{YYYY-MM-DD}.md
 | [RFC-0003](rfc-0003-loguru-first-logging-2026-06-03.md) | Loguru-First Logging Skill | Resolved → [ADR-0004](../plans/adr-0004-loguru-first-logging-2026-06-03.md) |
 | [RFC-0004](rfc-0004-agent-spec-and-tool-hook-2026-06-03.md) | Agent Spec Convention Skill | Resolved → [ADR-0005](../plans/adr-0005-agent-spec-convention-2026-06-03.md) |
 | [RFC-0005](rfc-0005-tdd-checkbox-plans-2026-06-03.md) | TDD Checkbox Plans Skill (Advisory) | Resolved → [ADR-0006](../plans/adr-0006-tdd-checkbox-plans-2026-06-03.md) |
+| [RFC-0006](rfc-0006-skill-implementation-deltas-2026-06-03.md) | Implementation Deltas From Skill Authoring | Draft |
 
 ## Process
 
