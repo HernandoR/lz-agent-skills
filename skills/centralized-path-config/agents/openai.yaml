@@ -1,0 +1,4 @@
+interface:
+  display_name: "Centralized Path Config"
+  short_description: "Consolidate path concatenation into a typed, frozen path-config tree"
+  default_prompt: "Use $centralized-path-config to add or refactor filesystem paths in this project."

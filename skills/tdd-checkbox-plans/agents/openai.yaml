@@ -1,0 +1,4 @@
+interface:
+  display_name: "TDD Checkbox Plans"
+  short_description: "Per-task red-test ladder for ADR implementation"
+  default_prompt: "Use $tdd-checkbox-plans to plan and execute the implementation of this ADR."

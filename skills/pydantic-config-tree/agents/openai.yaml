@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pydantic Config Tree"
+  short_description: "Typed root config model with sub-models, env binding, YAML round-trip"
+  default_prompt: "Use $pydantic-config-tree to consolidate settings into a typed config tree."

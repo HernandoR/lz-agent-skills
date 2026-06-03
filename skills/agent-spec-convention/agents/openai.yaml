@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Spec Convention"
+  short_description: "Project rules for AI agents in AGENTS.md / .agents/spec, with linter"
+  default_prompt: "Use $agent-spec-convention to add or audit a project rule for agents."

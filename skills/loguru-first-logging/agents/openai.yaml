@@ -1,0 +1,4 @@
+interface:
+  display_name: "Loguru-First Logging"
+  short_description: "Banner + file sink + rotation + stdlib intercept on top of loguru"
+  default_prompt: "Use $loguru-first-logging to set up logging in this project."
